@@ -1,0 +1,26 @@
+.cursor-trail {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.cursor-trail div {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f00;
+  transform: translate(-50%, -50%);
+  animation: cursor-trail 2s linear infinite;
+}
+
+@keyframes cursor-trail {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}

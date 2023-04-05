@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 120px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        background-image: url(images/buton.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+      }
+
+      .button:hover {
+        background-color: #eee;
+      }
+
+      #theme {
+        position: fixed;
+        top: 230px;
+        right: 262px;
+      }
+    </style>
+    <meta name="color-scheme" content="light">
+  </head>
+  <body>
+    <select id="theme" onchange="switchTheme()">
+      <option value= "light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
+    <script src="scrip1.js"></script>
+    <a href="login.html" class="button">Warp</a>
+  </body>
+</html>
